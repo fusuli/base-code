@@ -78,11 +78,16 @@ public class ListTest {
 	public void testModify() {
 		coursesToSelect.set(4, new Course("7", "数据结构"));
 	}
-	//删除list元素
+
+	// 删除list元素
 	public void testRemove() {
-		Course cr=(Course)coursesToSelect.get(4);
-		System.out.println("我是課程"+cr.id+":"+cr.name);
-		coursesToSelect.remove(cr);
+		// Course cr=(Course)coursesToSelect.get(4);
+		// System.out.println("我是課程"+cr.id+":"+cr.name);
+		// coursesToSelect.remove(cr);
+
+		// coursesToSelect.remove(4);
+		Course[] course = { (Course) coursesToSelect.get(4), (Course) coursesToSelect.get(5) };
+		coursesToSelect.removeAll(Arrays.asList(course));
 		System.out.println("成功删除");
 		testForEach();
 	}
