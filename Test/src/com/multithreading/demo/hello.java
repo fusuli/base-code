@@ -1,7 +1,7 @@
 package com.multithreading.demo;
 
 /**
- * @author Rollen-Holt 继承Thread类,直接调用run方法
+ * @author 继承Thread类,直接调用run方法
  */
 class hello extends Thread {
 
